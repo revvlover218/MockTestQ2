@@ -47,8 +47,34 @@ void Time::set(int h, int s)
 ostream &operator<< (ostream &output, const Time &t)
 {
 
-	output << t.gethour << ":" << t.getsecond;
+	output << t.hour << ":" << t.second;
 	return output;
 }
 
+Time &Time::operator++()
+{
+	increment();
+	return *this;
+}
 
+void Time::increment()
+{
+	if (hour >= 0 && hour <= 23)
+	{
+		if (second < 59)
+		{
+			++second;
+		}
+		else if (second > 59)
+		{
+			++hour;
+			second = 0;
+		}
+	}
+
+	else if (hour > 23)
+	{
+		hour = 0;
+	}
+
+}

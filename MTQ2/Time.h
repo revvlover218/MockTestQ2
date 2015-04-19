@@ -23,7 +23,11 @@ public:
 
 	void set(int, int);  //Mutator
 
-	friend ostream& operator<< (ostream&, const Time &);
+	friend ostream& operator<< (ostream &, const Time &); //Stream insertion overload
+
+	Time &operator++(); // Prefix operator overload
+
+	void increment();
 
 
 };
