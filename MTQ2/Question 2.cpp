@@ -5,9 +5,11 @@
 // Date:
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 #include <iostream>
-
+#include "Time.h"
+#include <string.h>
 
 using namespace std;
+ 
 // ***** QUESTION 2 *****
 // Question 2 consists of 3 parts
 // 2.1 Create a class "Time" which implements a 24hr clock in the format hh:mm

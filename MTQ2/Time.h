@@ -3,6 +3,7 @@
 #ifndef TIME_H
 #define Time_H
 
+using namespace std;
 
 class Time {
 
@@ -12,8 +13,15 @@ private:
 
 public:
 
-	Time();		//Default Constructor
+	Time(int, int);		//Constructor
 	~Time();		//Destructor
+   
+	int gethour() const; //Accessor
+	int getsecond() const; 
+
+	int get(int, int) const;
+
+	void set(int, int);  //Mutator
 
 };
 
