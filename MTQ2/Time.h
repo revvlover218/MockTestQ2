@@ -13,7 +13,7 @@ private:
 public:
 
 	Time();		//Default Constructor
-	~Time();
+	~Time();		//Destructor
 
 };
 

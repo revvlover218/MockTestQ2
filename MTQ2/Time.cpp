@@ -11,3 +11,6 @@ Time::Time()
 	second = 0;
 }
 
+Time::~Time()
+{
+}
