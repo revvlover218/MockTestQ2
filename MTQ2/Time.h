@@ -23,6 +23,9 @@ public:
 
 	void set(int, int);  //Mutator
 
+	friend ostream& operator<< (ostream&, const Time &);
+
+
 };
 
 #endif 

@@ -7,7 +7,7 @@
 #include <iostream>
 #include "Time.h"
 #include <string.h>
-
+#include <stdexcept>
 using namespace std;
  
 // ***** QUESTION 2 *****

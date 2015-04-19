@@ -26,9 +26,9 @@ int Time::getsecond() const
 	return second;
 }
 
-int Time::get(int hour, int second) const
+int Time::get(int hours, int mins) const
 {
-	return hour, second;
+	return hours, mins;
 }
 
 void Time::set(int h, int s) 
@@ -43,4 +43,12 @@ void Time::set(int h, int s)
 		second = s;
 	}
 }
+
+ostream &operator<< (ostream &output, const Time &t)
+{
+
+	output << t.gethour << ":" << t.getsecond;
+	return output;
+}
+
 
